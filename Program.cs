@@ -11,3 +11,24 @@ int secondValue = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите третье число: ");
 int thirdValue = Convert.ToInt32(Console.ReadLine());
+
+if (firstValue > secondValue)
+{
+    if (firstValue > thirdValue)
+    {
+        Console.WriteLine ($"Максимальное число: {firstValue}");
+    }
+    else
+    {
+        Console.WriteLine ($"Максимальное число: {thirdValue}");
+    }
+}
+
+else if (secondValue > thirdValue)
+{
+    Console.WriteLine($"Максимальное число:  {secondValue}");
+}
+else
+{
+    Console.WriteLine($"Максимальное число: {thirdValue}");
+}
